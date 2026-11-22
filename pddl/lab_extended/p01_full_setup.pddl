@@ -1,0 +1,23 @@
+;; Completely unprepared lab at the start of the day.
+(define (problem p01-full-setup)
+  (:domain lab-extended)
+  (:init
+    (NetworkSwitchWorking)
+    (SafetyNotChecked)
+    (MainPowerOff)
+    (LabUnclean)
+    (ComputersAvailable)
+    (ComputersOff)
+    (NetworkDown)
+    (SoftwareNotInstalled)
+    (LicenseInactive)
+    (ProjectorOff)
+    (ManualsNotReady)
+    (InstructorAbsent))
+  (:goal (and
+    (ProjectorOn)
+    (LabClean)
+    (SoftwareReady)
+    (InstructorPresent)
+    (LabStarted)))
+  (:metric minimize (total-cost)))

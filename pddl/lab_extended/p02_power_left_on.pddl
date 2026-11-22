@@ -1,0 +1,23 @@
+;; Power, PCs, network and projector were left ON overnight and the lab is dirty. Cleaning needs the power OFF, so the planner must decide what to finish before switching off.
+(define (problem p02-power-left-on)
+  (:domain lab-extended)
+  (:init
+    (NetworkSwitchWorking)
+    (LabUnclean)
+    (ComputersAvailable)
+    (SoftwareNotInstalled)
+    (LicenseInactive)
+    (ManualsNotReady)
+    (InstructorAbsent)
+    (SafetyChecked)
+    (MainPowerOn)
+    (ComputersOn)
+    (NetworkUp)
+    (ProjectorOn))
+  (:goal (and
+    (ProjectorOn)
+    (LabClean)
+    (SoftwareReady)
+    (InstructorPresent)
+    (LabStarted)))
+  (:metric minimize (total-cost)))

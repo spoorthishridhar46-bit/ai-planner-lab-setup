@@ -1,0 +1,64 @@
+domain,problem,algorithm,heuristic,solved,plan_length,plan_cost,nodes_expanded,nodes_generated,max_frontier,time_ms,valid,plan
+lab-basic,p01-question,BFS,-,True,5.0,5.0,9,18,4,0.049,True,CleanLab -> InstallSoftware -> PrepareProjector -> CallInstructor -> StartLab
+lab-basic,p01-question,DFS,-,True,5.0,5.0,6,11,5,0.021,True,CleanLab -> InstallSoftware -> PrepareProjector -> CallInstructor -> StartLab
+lab-basic,p01-question,IDDFS,-,True,5.0,5.0,69,74,5,0.117,True,CleanLab -> InstallSoftware -> PrepareProjector -> CallInstructor -> StartLab
+lab-basic,p01-question,UCS,-,True,5.0,5.0,10,20,4,0.038,True,CleanLab -> InstallSoftware -> PrepareProjector -> CallInstructor -> StartLab
+lab-basic,p01-question,Greedy,h_add,True,5.0,5.0,6,11,5,0.104,True,CleanLab -> InstallSoftware -> PrepareProjector -> CallInstructor -> StartLab
+lab-basic,p01-question,A*,h_max,True,5.0,5.0,8,16,4,0.112,True,CleanLab -> InstallSoftware -> PrepareProjector -> CallInstructor -> StartLab
+lab-basic,p01-question,Backward-BFS,-,True,5.0,5.0,29,103,10,0.153,True,PrepareProjector -> InstallSoftware -> CleanLab -> CallInstructor -> StartLab
+lab-basic,p02-no-computers,BFS,-,False,,,4,6,2,0.01,,
+lab-basic,p02-no-computers,DFS,-,False,,,4,6,2,0.009,,
+lab-basic,p02-no-computers,IDDFS,-,False,,,177,230,30,0.283,,
+lab-basic,p02-no-computers,UCS,-,False,,,4,6,2,0.01,,
+lab-basic,p02-no-computers,Greedy,h_add,False,,,0,0,0,0.01,,
+lab-basic,p02-no-computers,A*,h_max,False,,,0,0,0,0.008,,
+lab-basic,p02-no-computers,Backward-BFS,-,False,,,32,112,10,0.152,,
+lab-extended,p01-full-setup,BFS,-,True,10.0,85.0,110,468,30,0.714,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p01-full-setup,DFS,-,True,11.0,87.0,12,45,25,0.067,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> ConnectNetwork -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p01-full-setup,IDDFS,-,True,10.0,85.0,25347,29507,10,39.175,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p01-full-setup,UCS,-,True,11.0,59.0,121,508,30,0.961,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> ConnectNetwork -> PrepareProjector -> BootComputers -> InstallSoftware -> ActivateLicense -> CallInstructor -> PrintManuals -> StartLab
+lab-extended,p01-full-setup,Greedy,h_add,True,11.0,59.0,12,43,25,0.702,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> ConnectNetwork -> BootComputers -> InstallSoftware -> ActivateLicense -> PrepareProjector -> CallInstructor -> PrintManuals -> StartLab
+lab-extended,p01-full-setup,A*,h_max,True,11.0,59.0,77,328,44,2.956,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> ConnectNetwork -> InstallSoftware -> ActivateLicense -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p01-full-setup,Backward-BFS,-,True,10.0,85.0,1799,9932,439,21.166,True,CleanLab -> SafetyInspection -> SwitchOnMainPower -> PrepareProjector -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> CallInstructor -> PrintManuals -> StartLab
+lab-extended,p02-power-left-on,BFS,-,True,9.0,50.0,107,460,23,0.704,True,InstallSoftware -> ActivateLicense -> PrintManuals -> SwitchOffMainPower -> CleanLab -> SwitchOnMainPower -> PrepareProjector -> CallInstructor -> StartLab
+lab-extended,p02-power-left-on,DFS,-,True,11.0,83.0,12,41,22,0.061,True,InstallSoftwareFromUSB -> ActivateLicenseOffline -> PrintManuals -> SwitchOffMainPower -> CleanLab -> SwitchOnMainPower -> BootComputers -> ConnectNetwork -> PrepareProjector -> CallInstructor -> StartLab
+lab-extended,p02-power-left-on,IDDFS,-,True,9.0,50.0,43598,55793,9,75.294,True,InstallSoftware -> ActivateLicense -> PrintManuals -> SwitchOffMainPower -> CleanLab -> SwitchOnMainPower -> PrepareProjector -> CallInstructor -> StartLab
+lab-extended,p02-power-left-on,UCS,-,True,9.0,50.0,119,508,30,0.873,True,InstallSoftware -> ActivateLicense -> SwitchOffMainPower -> CleanLab -> SwitchOnMainPower -> PrepareProjector -> CallInstructor -> PrintManuals -> StartLab
+lab-extended,p02-power-left-on,Greedy,h_add,True,9.0,50.0,13,48,25,0.832,True,InstallSoftware -> ActivateLicense -> PrintManuals -> SwitchOffMainPower -> CleanLab -> SwitchOnMainPower -> PrepareProjector -> CallInstructor -> StartLab
+lab-extended,p02-power-left-on,A*,h_max,True,9.0,50.0,70,303,44,2.694,True,InstallSoftware -> ActivateLicense -> SwitchOffMainPower -> CleanLab -> SwitchOnMainPower -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p02-power-left-on,Backward-BFS,-,True,9.0,50.0,1416,8120,439,27.669,True,InstallSoftware -> ActivateLicense -> SwitchOffMainPower -> CleanLab -> SwitchOnMainPower -> PrepareProjector -> CallInstructor -> PrintManuals -> StartLab
+lab-extended,p03-software-preinstalled,BFS,-,True,9.0,45.0,77,321,25,0.749,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p03-software-preinstalled,DFS,-,True,10.0,47.0,11,39,21,0.103,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> ConnectNetwork -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p03-software-preinstalled,IDDFS,-,True,9.0,45.0,6966,8274,9,21.645,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p03-software-preinstalled,UCS,-,True,9.0,36.0,85,350,20,1.018,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> ConnectNetwork -> ActivateLicense -> PrepareProjector -> CallInstructor -> PrintManuals -> StartLab
+lab-extended,p03-software-preinstalled,Greedy,h_add,True,9.0,36.0,10,31,19,0.973,True,CleanLab -> SafetyInspection -> SwitchOnMainPower -> ConnectNetwork -> ActivateLicense -> PrepareProjector -> CallInstructor -> PrintManuals -> StartLab
+lab-extended,p03-software-preinstalled,A*,h_max,True,9.0,36.0,47,196,37,3.284,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> ConnectNetwork -> ActivateLicense -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p03-software-preinstalled,Backward-BFS,-,True,9.0,36.0,1386,7984,439,17.187,True,CleanLab -> SafetyInspection -> SwitchOnMainPower -> PrepareProjector -> ConnectNetwork -> ActivateLicense -> CallInstructor -> PrintManuals -> StartLab
+lab-extended,p04-instructor-early,BFS,-,True,9.0,82.0,94,403,30,0.558,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> StartLab
+lab-extended,p04-instructor-early,DFS,-,True,10.0,84.0,11,40,21,0.065,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> ConnectNetwork -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> StartLab
+lab-extended,p04-instructor-early,IDDFS,-,True,9.0,82.0,7768,9010,9,12.747,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> StartLab
+lab-extended,p04-instructor-early,UCS,-,True,10.0,56.0,106,442,30,0.829,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> ConnectNetwork -> PrepareProjector -> BootComputers -> InstallSoftware -> ActivateLicense -> PrintManuals -> StartLab
+lab-extended,p04-instructor-early,Greedy,h_add,True,10.0,56.0,11,38,20,0.651,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> ConnectNetwork -> BootComputers -> InstallSoftware -> PrintManuals -> ActivateLicense -> PrepareProjector -> StartLab
+lab-extended,p04-instructor-early,A*,h_max,True,10.0,56.0,69,291,40,2.526,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> ConnectNetwork -> InstallSoftware -> PrintManuals -> ActivateLicense -> PrepareProjector -> StartLab
+lab-extended,p04-instructor-early,Backward-BFS,-,True,9.0,82.0,1323,7669,439,16.103,True,CleanLab -> SafetyInspection -> SwitchOnMainPower -> PrintManuals -> PrepareProjector -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> StartLab
+lab-extended,p05-almost-ready,BFS,-,True,2.0,6.0,2,5,4,0.01,True,PrintManuals -> StartLab
+lab-extended,p05-almost-ready,DFS,-,True,2.0,6.0,3,8,7,0.016,True,PrintManuals -> StartLab
+lab-extended,p05-almost-ready,IDDFS,-,True,2.0,6.0,9,6,2,0.018,True,PrintManuals -> StartLab
+lab-extended,p05-almost-ready,UCS,-,True,2.0,6.0,11,39,9,0.071,True,PrintManuals -> StartLab
+lab-extended,p05-almost-ready,Greedy,h_add,True,2.0,6.0,3,8,7,0.159,True,PrintManuals -> StartLab
+lab-extended,p05-almost-ready,A*,h_max,True,2.0,6.0,3,8,7,0.156,True,PrintManuals -> StartLab
+lab-extended,p05-almost-ready,Backward-BFS,-,True,2.0,6.0,7,42,15,0.089,True,PrintManuals -> StartLab
+lab-extended,p06-no-computers,BFS,-,False,,,22,57,8,0.083,,
+lab-extended,p06-no-computers,DFS,-,False,,,22,57,6,0.098,,
+lab-extended,p06-no-computers,IDDFS,-,False,,,8368,17568,30,23.765,,
+lab-extended,p06-no-computers,UCS,-,False,,,22,57,6,0.108,,
+lab-extended,p06-no-computers,Greedy,h_add,False,,,0,0,0,0.022,,
+lab-extended,p06-no-computers,A*,h_max,False,,,0,0,0,0.017,,
+lab-extended,p06-no-computers,Backward-BFS,-,False,,,2440,12356,439,26.747,,
+lab-extended,p07-network-faulty,BFS,-,True,10.0,85.0,63,210,19,0.331,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p07-network-faulty,DFS,-,True,10.0,85.0,11,36,21,0.054,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p07-network-faulty,IDDFS,-,True,10.0,85.0,4681,6010,10,8.775,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p07-network-faulty,UCS,-,True,10.0,85.0,70,233,12,0.403,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> PrepareProjector -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> CallInstructor -> PrintManuals -> StartLab
+lab-extended,p07-network-faulty,Greedy,h_add,True,10.0,85.0,11,36,22,0.581,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> PrepareProjector -> CallInstructor -> PrintManuals -> StartLab
+lab-extended,p07-network-faulty,A*,h_max,True,10.0,85.0,49,170,21,1.539,True,SafetyInspection -> CleanLab -> SwitchOnMainPower -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> PrepareProjector -> PrintManuals -> CallInstructor -> StartLab
+lab-extended,p07-network-faulty,Backward-BFS,-,True,10.0,85.0,1799,9932,439,20.41,True,CleanLab -> SafetyInspection -> SwitchOnMainPower -> PrepareProjector -> BootComputers -> InstallSoftwareFromUSB -> ActivateLicenseOffline -> CallInstructor -> PrintManuals -> StartLab

@@ -1,0 +1,6 @@
+;; Unprepared lab with 3 workstation(s) (auto-generated)
+(define (problem lab-scaled-k3)
+  (:domain lab-scaled-k3)
+  (:init (MainPowerOff) (LabUnclean) (NetworkDown) (ProjectorOff) (InstructorAbsent) (PC1Off) (PC2Off) (PC3Off))
+  (:goal (and (ProjectorOn) (LabClean) (SoftwareReady) (InstructorPresent) (LabStarted)))
+  (:metric minimize (total-cost)))

@@ -1,0 +1,9 @@
+problem,method,samples,executable_pct,valid_plan_pct,mean_len_of_valid,mean_cost_of_valid
+p01-question,Random sequence (length 5),10000,0.34,0.05,5.0,5.0
+p01-question,"Random walk (applicable only, <= 15 steps)",10000,100.0,63.03,9.58,9.58
+p01-question,All 5! orderings of the plan's actions,120,5.0,5.0,5.0,5.0
+p01-question,"Planner (A*, h_max)",1,100.0,100.0,5.0,5.0
+p01-full-setup,Random sequence (length 11),10000,0.0,0.0,,
+p01-full-setup,"Random walk (applicable only, <= 33 steps)",10000,100.0,19.8,25.56,99.56
+p01-full-setup,"Shuffled plan (same actions, random order)",10000,0.0,0.0,,
+p01-full-setup,"Planner (A*, h_max)",1,100.0,100.0,11.0,59.0

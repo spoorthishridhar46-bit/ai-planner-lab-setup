@@ -1,0 +1,23 @@
+;; Lab is ready except for the lab manuals; the session has not started.
+(define (problem p05-almost-ready)
+  (:domain lab-extended)
+  (:init
+    (NetworkSwitchWorking)
+    (SafetyChecked)
+    (MainPowerOn)
+    (LabClean)
+    (ComputersAvailable)
+    (ComputersOn)
+    (NetworkUp)
+    (SoftwareInstalled)
+    (SoftwareReady)
+    (ProjectorOn)
+    (ManualsNotReady)
+    (InstructorPresent))
+  (:goal (and
+    (ProjectorOn)
+    (LabClean)
+    (SoftwareReady)
+    (InstructorPresent)
+    (LabStarted)))
+  (:metric minimize (total-cost)))

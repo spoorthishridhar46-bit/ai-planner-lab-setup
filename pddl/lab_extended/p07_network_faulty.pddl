@@ -1,0 +1,22 @@
+;; The network switch is faulty (NetworkSwitchWorking is false), so the planner must use USB install + offline licence.
+(define (problem p07-network-faulty)
+  (:domain lab-extended)
+  (:init
+    (SafetyNotChecked)
+    (MainPowerOff)
+    (LabUnclean)
+    (ComputersAvailable)
+    (ComputersOff)
+    (SoftwareNotInstalled)
+    (LicenseInactive)
+    (ProjectorOff)
+    (NetworkDown)
+    (ManualsNotReady)
+    (InstructorAbsent))
+  (:goal (and
+    (ProjectorOn)
+    (LabClean)
+    (SoftwareReady)
+    (InstructorPresent)
+    (LabStarted)))
+  (:metric minimize (total-cost)))

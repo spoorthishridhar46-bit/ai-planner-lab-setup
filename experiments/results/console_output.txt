@@ -1,0 +1,175 @@
+Experiment 1 ...
+      domain                   problem    algorithm heuristic  solved  plan_length  plan_cost  nodes_expanded  nodes_generated  max_frontier  time_ms valid
+   lab-basic              p01-question          BFS         -    True          5.0        5.0               9               18             4    0.049  True
+   lab-basic              p01-question          DFS         -    True          5.0        5.0               6               11             5    0.021  True
+   lab-basic              p01-question        IDDFS         -    True          5.0        5.0              69               74             5    0.117  True
+   lab-basic              p01-question          UCS         -    True          5.0        5.0              10               20             4    0.038  True
+   lab-basic              p01-question       Greedy     h_add    True          5.0        5.0               6               11             5    0.104  True
+   lab-basic              p01-question           A*     h_max    True          5.0        5.0               8               16             4    0.112  True
+   lab-basic              p01-question Backward-BFS         -    True          5.0        5.0              29              103            10    0.153  True
+   lab-basic          p02-no-computers          BFS         -   False          NaN        NaN               4                6             2    0.010  None
+   lab-basic          p02-no-computers          DFS         -   False          NaN        NaN               4                6             2    0.009  None
+   lab-basic          p02-no-computers        IDDFS         -   False          NaN        NaN             177              230            30    0.283  None
+   lab-basic          p02-no-computers          UCS         -   False          NaN        NaN               4                6             2    0.010  None
+   lab-basic          p02-no-computers       Greedy     h_add   False          NaN        NaN               0                0             0    0.010  None
+   lab-basic          p02-no-computers           A*     h_max   False          NaN        NaN               0                0             0    0.008  None
+   lab-basic          p02-no-computers Backward-BFS         -   False          NaN        NaN              32              112            10    0.152  None
+lab-extended            p01-full-setup          BFS         -    True         10.0       85.0             110              468            30    0.714  True
+lab-extended            p01-full-setup          DFS         -    True         11.0       87.0              12               45            25    0.067  True
+lab-extended            p01-full-setup        IDDFS         -    True         10.0       85.0           25347            29507            10   39.175  True
+lab-extended            p01-full-setup          UCS         -    True         11.0       59.0             121              508            30    0.961  True
+lab-extended            p01-full-setup       Greedy     h_add    True         11.0       59.0              12               43            25    0.702  True
+lab-extended            p01-full-setup           A*     h_max    True         11.0       59.0              77              328            44    2.956  True
+lab-extended            p01-full-setup Backward-BFS         -    True         10.0       85.0            1799             9932           439   21.166  True
+lab-extended         p02-power-left-on          BFS         -    True          9.0       50.0             107              460            23    0.704  True
+lab-extended         p02-power-left-on          DFS         -    True         11.0       83.0              12               41            22    0.061  True
+lab-extended         p02-power-left-on        IDDFS         -    True          9.0       50.0           43598            55793             9   75.294  True
+lab-extended         p02-power-left-on          UCS         -    True          9.0       50.0             119              508            30    0.873  True
+lab-extended         p02-power-left-on       Greedy     h_add    True          9.0       50.0              13               48            25    0.832  True
+lab-extended         p02-power-left-on           A*     h_max    True          9.0       50.0              70              303            44    2.694  True
+lab-extended         p02-power-left-on Backward-BFS         -    True          9.0       50.0            1416             8120           439   27.669  True
+lab-extended p03-software-preinstalled          BFS         -    True          9.0       45.0              77              321            25    0.749  True
+lab-extended p03-software-preinstalled          DFS         -    True         10.0       47.0              11               39            21    0.103  True
+lab-extended p03-software-preinstalled        IDDFS         -    True          9.0       45.0            6966             8274             9   21.645  True
+lab-extended p03-software-preinstalled          UCS         -    True          9.0       36.0              85              350            20    1.018  True
+lab-extended p03-software-preinstalled       Greedy     h_add    True          9.0       36.0              10               31            19    0.973  True
+lab-extended p03-software-preinstalled           A*     h_max    True          9.0       36.0              47              196            37    3.284  True
+lab-extended p03-software-preinstalled Backward-BFS         -    True          9.0       36.0            1386             7984           439   17.187  True
+lab-extended      p04-instructor-early          BFS         -    True          9.0       82.0              94              403            30    0.558  True
+lab-extended      p04-instructor-early          DFS         -    True         10.0       84.0              11               40            21    0.065  True
+lab-extended      p04-instructor-early        IDDFS         -    True          9.0       82.0            7768             9010             9   12.747  True
+lab-extended      p04-instructor-early          UCS         -    True         10.0       56.0             106              442            30    0.829  True
+lab-extended      p04-instructor-early       Greedy     h_add    True         10.0       56.0              11               38            20    0.651  True
+lab-extended      p04-instructor-early           A*     h_max    True         10.0       56.0              69              291            40    2.526  True
+lab-extended      p04-instructor-early Backward-BFS         -    True          9.0       82.0            1323             7669           439   16.103  True
+lab-extended          p05-almost-ready          BFS         -    True          2.0        6.0               2                5             4    0.010  True
+lab-extended          p05-almost-ready          DFS         -    True          2.0        6.0               3                8             7    0.016  True
+lab-extended          p05-almost-ready        IDDFS         -    True          2.0        6.0               9                6             2    0.018  True
+lab-extended          p05-almost-ready          UCS         -    True          2.0        6.0              11               39             9    0.071  True
+lab-extended          p05-almost-ready       Greedy     h_add    True          2.0        6.0               3                8             7    0.159  True
+lab-extended          p05-almost-ready           A*     h_max    True          2.0        6.0               3                8             7    0.156  True
+lab-extended          p05-almost-ready Backward-BFS         -    True          2.0        6.0               7               42            15    0.089  True
+lab-extended          p06-no-computers          BFS         -   False          NaN        NaN              22               57             8    0.083  None
+lab-extended          p06-no-computers          DFS         -   False          NaN        NaN              22               57             6    0.098  None
+lab-extended          p06-no-computers        IDDFS         -   False          NaN        NaN            8368            17568            30   23.765  None
+lab-extended          p06-no-computers          UCS         -   False          NaN        NaN              22               57             6    0.108  None
+lab-extended          p06-no-computers       Greedy     h_add   False          NaN        NaN               0                0             0    0.022  None
+lab-extended          p06-no-computers           A*     h_max   False          NaN        NaN               0                0             0    0.017  None
+lab-extended          p06-no-computers Backward-BFS         -   False          NaN        NaN            2440            12356           439   26.747  None
+lab-extended        p07-network-faulty          BFS         -    True         10.0       85.0              63              210            19    0.331  True
+lab-extended        p07-network-faulty          DFS         -    True         10.0       85.0              11               36            21    0.054  True
+lab-extended        p07-network-faulty        IDDFS         -    True         10.0       85.0            4681             6010            10    8.775  True
+lab-extended        p07-network-faulty          UCS         -    True         10.0       85.0              70              233            12    0.403  True
+lab-extended        p07-network-faulty       Greedy     h_add    True         10.0       85.0              11               36            22    0.581  True
+lab-extended        p07-network-faulty           A*     h_max    True         10.0       85.0              49              170            21    1.539  True
+lab-extended        p07-network-faulty Backward-BFS         -    True         10.0       85.0            1799             9932           439   20.410  True
+
+Experiment 2 ...
+                  problem algorithm  heuristic  solved  plan_length  plan_cost  nodes_expanded  nodes_generated  max_frontier  time_ms
+           p01-full-setup        A*       zero    True         11.0       59.0             121              508            30    0.937
+           p01-full-setup        A* goal_count    True         11.0       59.0             113              472            31    0.884
+           p01-full-setup        A*      h_max    True         11.0       59.0              77              328            44    2.774
+           p01-full-setup        A*      h_add    True         11.0       59.0              12               43            25    0.715
+           p01-full-setup    Greedy       zero    True         10.0       85.0             120              506            40    0.887
+           p01-full-setup    Greedy goal_count    True         10.0       85.0              15               60            29    0.156
+           p01-full-setup    Greedy      h_max    True         13.0       81.0              20               81            30    1.013
+           p01-full-setup    Greedy      h_add    True         11.0       59.0              12               43            25    0.669
+        p02-power-left-on        A*       zero    True          9.0       50.0             119              508            30    0.878
+        p02-power-left-on        A* goal_count    True          9.0       50.0             108              460            33    0.826
+        p02-power-left-on        A*      h_max    True          9.0       50.0              70              303            44    2.647
+        p02-power-left-on        A*      h_add    True          9.0       50.0              15               57            25    0.886
+        p02-power-left-on    Greedy       zero    True          9.0       50.0             117              500            23    0.828
+        p02-power-left-on    Greedy goal_count    True          9.0       50.0              19               78            34    0.175
+        p02-power-left-on    Greedy      h_max    True         10.0       52.0              17               72            26    0.894
+        p02-power-left-on    Greedy      h_add    True          9.0       50.0              13               48            25    0.807
+p03-software-preinstalled        A*       zero    True          9.0       36.0              85              350            20    0.602
+p03-software-preinstalled        A* goal_count    True          9.0       36.0              76              312            24    0.557
+p03-software-preinstalled        A*      h_max    True          9.0       36.0              47              196            37    1.783
+p03-software-preinstalled        A*      h_add    True          9.0       36.0              10               31            19    0.530
+p03-software-preinstalled    Greedy       zero    True          9.0       45.0              86              356            28    0.640
+p03-software-preinstalled    Greedy goal_count    True          9.0       45.0              11               40            23    0.104
+p03-software-preinstalled    Greedy      h_max    True          9.0       36.0              16               61            18    0.632
+p03-software-preinstalled    Greedy      h_add    True          9.0       36.0              10               31            19    0.512
+     p04-instructor-early        A*       zero    True         10.0       56.0             106              442            30    0.755
+     p04-instructor-early        A* goal_count    True         10.0       56.0              97              408            30    0.731
+     p04-instructor-early        A*      h_max    True         10.0       56.0              69              291            40    2.405
+     p04-instructor-early        A*      h_add    True         10.0       56.0              11               38            20    0.583
+     p04-instructor-early    Greedy       zero    True          9.0       82.0             108              453            40    0.851
+     p04-instructor-early    Greedy goal_count    True          9.0       82.0              14               54            24    0.109
+     p04-instructor-early    Greedy      h_max    True         12.0       78.0              14               49            25    0.857
+     p04-instructor-early    Greedy      h_add    True         10.0       56.0              11               38            20    0.570
+         p05-almost-ready        A*       zero    True          2.0        6.0              11               39             9    0.071
+         p05-almost-ready        A* goal_count    True          2.0        6.0               9               31             9    0.059
+         p05-almost-ready        A*      h_max    True          2.0        6.0               3                8             7    0.204
+         p05-almost-ready        A*      h_add    True          2.0        6.0               3                8             7    0.151
+         p05-almost-ready    Greedy       zero    True          2.0        6.0               6               17             7    0.033
+         p05-almost-ready    Greedy goal_count    True          2.0        6.0               3                8             7    0.019
+         p05-almost-ready    Greedy      h_max    True          2.0        6.0               3                8             7    0.169
+         p05-almost-ready    Greedy      h_add    True          2.0        6.0               3                8             7    0.151
+         p06-no-computers        A*       zero   False          NaN        NaN              22               57             6    0.136
+         p06-no-computers        A* goal_count   False          NaN        NaN              22               57             6    0.131
+         p06-no-computers        A*      h_max   False          NaN        NaN               0                0             0    0.021
+         p06-no-computers        A*      h_add   False          NaN        NaN               0                0             0    0.018
+         p06-no-computers    Greedy       zero   False          NaN        NaN              22               57             8    0.107
+         p06-no-computers    Greedy goal_count   False          NaN        NaN              22               57             5    0.122
+         p06-no-computers    Greedy      h_max   False          NaN        NaN               0                0             0    0.017
+         p06-no-computers    Greedy      h_add   False          NaN        NaN               0                0             0    0.018
+       p07-network-faulty        A*       zero    True         10.0       85.0              70              233            12    0.440
+       p07-network-faulty        A* goal_count    True         10.0       85.0              68              226            13    0.476
+       p07-network-faulty        A*      h_max    True         10.0       85.0              49              170            21    1.523
+       p07-network-faulty        A*      h_add    True         10.0       85.0              11               36            22    0.615
+       p07-network-faulty    Greedy       zero    True         10.0       85.0              68              226            19    0.411
+       p07-network-faulty    Greedy goal_count    True         10.0       85.0              12               38            20    0.081
+       p07-network-faulty    Greedy      h_max    True         13.0       90.0              14               47            25    0.740
+       p07-network-faulty    Greedy      h_add    True         10.0       85.0              11               36            22    0.675
+
+Experiment 3 ...
+ k        config  facts  actions algorithm heuristic  solved  plan_length  plan_cost  nodes_expanded  nodes_generated  max_frontier   time_ms
+ 1           BFS     16       12       BFS         -    True           10       32.0              43              155             9     0.294
+ 1           UCS     16       12       UCS         -    True           10       32.0              46              165             6     0.460
+ 1     A*(h_max)     16       12        A*     h_max    True           10       32.0              14               46            12     0.667
+ 1     A*(h_add)     16       12        A*     h_add    True           10       32.0              11               34            12     0.649
+ 1 Greedy(h_add)     16       12    Greedy     h_add    True           10       32.0              11               34            12     0.654
+ 2           BFS     20       16       BFS         -    True           13       39.0             176              957            28     1.899
+ 2           UCS     20       16       UCS         -    True           13       39.0             183             1000            22     2.357
+ 2     A*(h_max)     20       16        A*     h_max    True           13       39.0              54              272            34     3.311
+ 2     A*(h_add)     20       16        A*     h_add    True           13       39.0              14               66            27     1.270
+ 2 Greedy(h_add)     20       16    Greedy     h_add    True           13       39.0              14               66            27     1.124
+ 3           BFS     24       20       BFS         -    True           16       46.0             914             6851           146     8.679
+ 3           UCS     24       20       UCS         -    True           16       46.0             936             7043           112     9.770
+ 3     A*(h_max)     24       20        A*     h_max    True           16       46.0             303             2194           135    11.445
+ 3     A*(h_add)     24       20        A*     h_add    True           16       46.0              17              110            48     1.481
+ 3 Greedy(h_add)     24       20    Greedy     h_add    True           16       46.0              17              110            48     1.464
+ 4           BFS     28       24       BFS         -    True           19       53.0            5241            50562           744    71.310
+ 4           UCS     28       24       UCS         -    True           19       53.0            5321            51432           612    77.317
+ 4     A*(h_max)     28       24        A*     h_max    True           19       53.0            1926            18236           628    82.620
+ 4     A*(h_add)     28       24        A*     h_add    True           19       53.0              20              166            75     2.540
+ 4 Greedy(h_add)     28       24    Greedy     h_add    True           19       53.0              20              166            75     2.572
+ 5           BFS     32       28       BFS         -    True           22       60.0           31045           366927          4016   593.875
+ 5           UCS     32       28       UCS         -    True           22       60.0           31369           371086          4106   757.050
+ 5     A*(h_max)     32       28        A*     h_max    True           22       60.0           12388           144523          3525  1032.205
+ 5     A*(h_add)     32       28        A*     h_add    True           22       60.0              23              234           108     4.012
+ 5 Greedy(h_add)     32       28    Greedy     h_add    True           22       60.0              23              234           108     3.867
+ 6           BFS     36       32       BFS         -    True           25       67.0          185706          2598219         22177  4547.195
+ 6           UCS     36       32       UCS         -    True           25       67.0          187138          2619481         26090  5108.272
+ 6     A*(h_max)     36       32        A*     h_max    True           25       67.0           78790          1091406         19538  5247.620
+ 6     A*(h_add)     36       32        A*     h_add    True           25       67.0              26              314           147    10.258
+ 6 Greedy(h_add)     36       32    Greedy     h_add    True           25       67.0              26              314           147    10.157
+ 7           BFS     40       36       BFS         -    True           28       74.0         1114037         18003431        123571 37618.812
+ 7           UCS     40       36       UCS         -    True           28       74.0         1120727         18117038        160001 53491.861
+ 7     A*(h_max)     40       36        A*     h_max    True           28       74.0          494491          7929278        119434 48244.499
+ 7     A*(h_add)     40       36        A*     h_add    True           28       74.0              29              406           192     8.870
+ 7 Greedy(h_add)     40       36    Greedy     h_add    True           28       74.0              29              406           192     8.870
+
+Experiment 4 ...
+       problem                                     method  samples  executable_pct  valid_plan_pct  mean_len_of_valid  mean_cost_of_valid
+  p01-question                 Random sequence (length 5)    10000            0.34            0.05               5.00                5.00
+  p01-question Random walk (applicable only, <= 15 steps)    10000          100.00           63.03               9.58                9.58
+  p01-question     All 5! orderings of the plan's actions      120            5.00            5.00               5.00                5.00
+  p01-question                        Planner (A*, h_max)        1          100.00          100.00               5.00                5.00
+p01-full-setup                Random sequence (length 11)    10000            0.00            0.00                NaN                 NaN
+p01-full-setup Random walk (applicable only, <= 33 steps)    10000          100.00           19.80              25.56               99.56
+p01-full-setup Shuffled plan (same actions, random order)    10000            0.00            0.00                NaN                 NaN
+p01-full-setup                        Planner (A*, h_max)        1          100.00          100.00              11.00               59.00
+
+Results written to /home/claude/ai-lab-planner/experiments/results

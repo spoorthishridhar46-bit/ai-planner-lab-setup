@@ -1,0 +1,23 @@
+;; Software was installed last week; only the licence must be activated.
+(define (problem p03-software-preinstalled)
+  (:domain lab-extended)
+  (:init
+    (NetworkSwitchWorking)
+    (SafetyNotChecked)
+    (MainPowerOff)
+    (LabUnclean)
+    (ComputersAvailable)
+    (ComputersOff)
+    (NetworkDown)
+    (LicenseInactive)
+    (ProjectorOff)
+    (ManualsNotReady)
+    (InstructorAbsent)
+    (SoftwareInstalled))
+  (:goal (and
+    (ProjectorOn)
+    (LabClean)
+    (SoftwareReady)
+    (InstructorPresent)
+    (LabStarted)))
+  (:metric minimize (total-cost)))

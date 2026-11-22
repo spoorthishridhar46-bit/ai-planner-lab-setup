@@ -1,0 +1,22 @@
+;; UNSOLVABLE: no computers are available in the lab.
+(define (problem p06-no-computers)
+  (:domain lab-extended)
+  (:init
+    (NetworkSwitchWorking)
+    (SafetyNotChecked)
+    (MainPowerOff)
+    (LabUnclean)
+    (ComputersOff)
+    (NetworkDown)
+    (SoftwareNotInstalled)
+    (LicenseInactive)
+    (ProjectorOff)
+    (ManualsNotReady)
+    (InstructorAbsent))
+  (:goal (and
+    (ProjectorOn)
+    (LabClean)
+    (SoftwareReady)
+    (InstructorPresent)
+    (LabStarted)))
+  (:metric minimize (total-cost)))

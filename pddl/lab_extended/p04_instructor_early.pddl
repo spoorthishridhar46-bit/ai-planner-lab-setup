@@ -1,0 +1,23 @@
+;; The instructor has already arrived; everything else is unprepared.
+(define (problem p04-instructor-early)
+  (:domain lab-extended)
+  (:init
+    (NetworkSwitchWorking)
+    (SafetyNotChecked)
+    (MainPowerOff)
+    (LabUnclean)
+    (ComputersAvailable)
+    (ComputersOff)
+    (NetworkDown)
+    (SoftwareNotInstalled)
+    (LicenseInactive)
+    (ProjectorOff)
+    (ManualsNotReady)
+    (InstructorPresent))
+  (:goal (and
+    (ProjectorOn)
+    (LabClean)
+    (SoftwareReady)
+    (InstructorPresent)
+    (LabStarted)))
+  (:metric minimize (total-cost)))

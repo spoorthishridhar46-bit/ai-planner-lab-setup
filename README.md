@@ -54,6 +54,7 @@ Requires Python ≥ 3.9. The planner core uses **only the standard library**. St
 ```
 ai-lab-setup-planner/
 ├── app.py                      # Streamlit web application
+├── ui_text.toml                # ALL text shown on the website (edit wording here)
 ├── planner/
 │   ├── strips.py               # STRIPS model: Action, Problem, progression & regression
 │   ├── pddl_parser.py          # propositional STRIPS PDDL + :action-costs parser
@@ -140,7 +141,11 @@ Full CSVs are in `experiments/results/`.
 
 ---
 
-## 6. Deploying the Streamlit app (free)
+## 6. Changing the website text
+
+Every title, label, button and message on the website is stored in **`ui_text.toml`**. Open it in Notepad or VS Code, change the text inside the quotes, save, and refresh the browser. The comments at the top of the file explain the rules.
+
+## 7. Deploying the Streamlit app (free)
 
 1. Push this repository to GitHub (public).
 2. Go to <https://share.streamlit.io>, sign in with GitHub, click **Create app**.
@@ -149,7 +154,7 @@ Full CSVs are in `experiments/results/`.
 
 ---
 
-## 7. Dataset and references
+## 8. Dataset and references
 
 ### Dataset
 
@@ -175,7 +180,7 @@ The instances follow the PDDL language [2] and the file conventions of the Inter
 
 ---
 
-## 8. Team
+## 9. Team
 
 | Name | USN | Role |
 |---|---|---|

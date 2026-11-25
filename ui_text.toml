@@ -1,0 +1,156 @@
+# =====================================================================
+#  WEBSITE TEXT - edit this file to change any wording in the app.
+# =====================================================================
+#  How to edit:
+#   * Change only the text between the quotes "..." on the right of "=".
+#   * Do NOT change the names on the left of "=" (title, subtitle, ...).
+#   * Words inside curly braces like {algo} or {n} are filled in by the
+#     program. Keep them exactly as they are; you can move them around.
+#   * **text** makes text bold, *text* makes it italic, `text` shows it
+#     in code style.
+#   * Text between ''' and ''' can span several lines.
+#   * Save the file, then refresh the browser page (press R in the app,
+#     or F5). If the app shows an error about ui_text.toml, you probably
+#     deleted a quote mark - undo your last change.
+# =====================================================================
+
+[page]
+browser_tab_title = "AI Planner for Lab Setup"
+title = "AI Planner for Laboratory Setup"
+subtitle = "Classical (STRIPS) planning with state-space search | VTU BCS515B Artificial Intelligence | Project 14"
+
+[sidebar]
+problem_header = "1. Problem"
+source_label = "Source"
+source_builtin = "Built-in scenario"
+source_upload = "Upload PDDL"
+scenario_label = "Scenario"
+upload_help = "Upload a propositional STRIPS domain and problem file (see the files in the pddl folder for the format)."
+pddl_error = "PDDL error: {error}"
+states_header = "2. Customise states"
+initial_label = "Initial state (true facts)"
+goal_label = "Goal (facts that must hold)"
+search_header = "3. Search"
+algorithm_label = "Algorithm"
+heuristic_label = "Heuristic"
+
+# One-line description shown under the algorithm box
+[algorithms]
+"BFS" = "Breadth-first: complete, fewest actions, ignores cost."
+"DFS" = "Depth-first: quick to find a plan, usually not the shortest or cheapest."
+"IDDFS" = "Iterative deepening: shortest plan like BFS with the memory of DFS, but re-expands nodes."
+"UCS" = "Uniform-cost (Dijkstra): cheapest plan, blind search."
+"Greedy" = "Greedy best-first: follows the heuristic only. Fast, not optimal."
+"A*" = "A*: f = g + h. Optimal when h is admissible (h_max)."
+"Backward-BFS" = "Regression search from the goal back to the initial state."
+
+[tabs]
+problem = "Problem"
+plan = "Generate plan"
+validate = "Validate a sequence"
+compare = "Compare algorithms"
+arbitrary = "Arbitrary vs valid"
+theory = "Theory"
+
+[problem_tab]
+domain_word = "domain"
+initial_state = "Initial state I"
+goal = "Goal G"
+size_line = "**|F| = {facts} facts, |A| = {actions} actions**, so up to 2^{facts} = {states} possible states."
+actions_heading = "Actions (preconditions and effects)"
+col_action = "Action"
+col_pre = "Preconditions"
+col_add = "Add effects"
+col_del = "Delete effects"
+col_cost = "Cost"
+pddl_expander = "View PDDL source"
+
+[plan_tab]
+heading = "Plan with {algo}"
+heading_with_heuristic = "Plan with {algo} + {heuristic}"
+button = "Generate plan"
+spinner = "Searching the state space..."
+metric_length = "Plan length"
+metric_cost = "Plan cost"
+metric_expanded = "Nodes expanded"
+metric_generated = "Nodes generated"
+metric_time = "Time"
+found = "Plan found by **{algo}** and independently re-checked by the validator: **{verdict}**."
+plan_heading = "Plan"
+transitions_heading = "**State transitions** (each box shows the facts added by the action)"
+trace_expander = "Step-by-step trace"
+tree_expander = "Explored search tree (first {n} edges; plan path in blue)"
+tree_caption = "Node numbers are state IDs in generation order. For backward search the nodes are sub-goals, not world states."
+start_hint = "Press **Generate plan**. Change the scenario, the states or the algorithm in the sidebar."
+
+[validate_tab]
+heading = "Is this sequence a valid plan?"
+intro = "Type any sequence of action names (one per line), or generate one, and the validator simulates it from the initial state, checking every precondition and finally the goal."
+btn_random = "Random sequence"
+btn_walk = "Random walk"
+btn_shuffle = "Shuffle planner's plan"
+btn_use_plan = "Use planner's plan"
+text_label = "Action sequence"
+available = "Available actions: {names}"
+
+# Result box shown after checking a sequence
+[verdict]
+valid = "VALID PLAN"
+not_executable = "NOT EXECUTABLE"
+no_goal = "EXECUTABLE, GOAL NOT REACHED"
+col_step = "Step"
+col_action = "Action"
+col_ok = "Preconditions met?"
+yes = "Yes"
+no = "No"
+col_missing = "Missing"
+col_added = "Added"
+col_deleted = "Deleted"
+final_state = "Final state reached"
+missing_goals = "Goal facts still missing"
+none_missing = "None"
+
+[compare_tab]
+heading = "All algorithms on the current problem"
+button = "Run comparison"
+skipped = "IDDFS and Backward-BFS are skipped on large instances (they need far too many nodes)."
+chart_nodes = "**Nodes expanded** (fewer = more efficient search)"
+chart_cost = "**Plan cost** (lower = better plan)"
+
+[arbitrary_tab]
+heading = "Arbitrary sequences vs valid plans"
+intro = "We sample many action sequences that were **not** produced by planning and check how many of them are actually valid plans."
+slider = "Samples per method"
+button = "Run experiment"
+no_plan = "The current problem has no plan, so no sequence can be valid."
+m_random = "Random sequence (length {n})"
+m_walk = "Random walk (applicable actions only)"
+m_shuffle = "Planner's actions, shuffled"
+m_planner = "Planner (A*)"
+col_method = "method"
+col_exec = "executable %"
+col_valid = "valid plan %"
+col_cost = "avg cost of valid ones"
+conclusion = "Random sequences almost never satisfy all preconditions. Random walks are executable by construction but rarely reach the goal, and when they do the plan is long and costly. Only goal-directed search guarantees a valid (and, with UCS or A* with h_max, optimal) plan."
+
+[theory_tab]
+heading = "Classical planning in one page"
+# Formulas between $ signs are written in LaTeX.
+body = '''
+**Problem** $P = \langle F, A, I, G \rangle$: facts, actions, initial state, goal (STRIPS, closed-world assumption).
+
+**Action** $a = \langle pre(a), add(a), del(a)\rangle$ is *applicable* in state $s$ iff $pre(a) \subseteq s$,
+and produces $\gamma(s,a) = (s \setminus del(a)) \cup add(a)$.
+
+**Arbitrary sequence**: any list $\langle a_1,\dots,a_n\rangle$ of action names. Nothing guarantees it can be executed.
+
+**Valid plan**: a sequence such that for every $i$, $pre(a_i) \subseteq s_{i-1}$ where
+$s_0 = I,\; s_i = \gamma(s_{i-1}, a_i)$, **and** $G \subseteq s_n$.
+
+**State-space search** explores the graph whose nodes are states and whose edges are applicable actions:
+- *Progression* (forward) from $I$ until a state satisfies $G$: BFS, DFS, IDDFS, UCS, Greedy, A*.
+- *Regression* (backward) from $G$, replacing goals by preconditions until $I$ satisfies the sub-goal.
+
+**Heuristics** are derived automatically by ignoring delete effects (the *relaxed* problem):
+$h_{max}$ is admissible (A* stays optimal); $h_{add}$ is more informed but may overestimate.
+'''
